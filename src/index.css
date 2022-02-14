@@ -1,13 +1,26 @@
+@tailwind base;
+@tailwind components;
+
+@import url('https://api.fontshare.com/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Clash Display', sans-serif !important;
+    background-color: #111314 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sc{
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
+.sc:hover {
+
+    background-color: #B8DBDF;
+
+}
+.sc:hover  .sicon {
+
+    color: #111314;
+} 
+
+
+@tailwind utilities;
